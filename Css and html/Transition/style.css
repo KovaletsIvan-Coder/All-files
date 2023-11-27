@@ -1,0 +1,15 @@
+.box{
+    width:200px;
+    height:200px;
+    margin: 40px 0 0 40px;
+    border: 2px solid black;
+    background-color:rgb(123, 12, 170);
+    transition-duration: 1s,2s; /* тривалість, ми можемо через кому прописувати тривілість для кожної властивості*/
+    transition-property: background-color,transform;/*ми можемо вибирати для якої саме властивості буде задіюватсь тривалість*/
+    transition-delay: 500ms,0;/*затримка(перша властивість почне діяти через 500мс після наведення*/
+    transition-timing-function: linear;/* плавність на різних етапах переходу*/
+}
+.box:hover{
+    background-color:rgb(205, 43, 226);
+    transform: scale(1.2);
+}

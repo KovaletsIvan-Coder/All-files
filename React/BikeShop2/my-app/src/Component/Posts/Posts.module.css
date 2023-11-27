@@ -1,0 +1,33 @@
+
+.bike_icon{
+    width: 500px;
+    height: 400px;
+    border: solid 1px #cccccc;
+    border-radius: 20px;
+    padding: 10px;
+}
+.bike_icon:hover{
+    transform: scale(1.01);
+    transition: 0.4s;   
+}
+.bike_img{
+    width: 96%;
+    margin: 0 13px
+}
+.bike_information{
+    margin: 20px;
+    display: grid;
+    grid-gap: 10px;
+}
+.selector{
+    width: 40px;
+}
+.buy_button{
+    background-color:  #1a1a1a;
+    color: white;
+    border-radius: 3px;
+}
+.buy_button:active{
+    background-color:  #4a4a4a;
+
+}

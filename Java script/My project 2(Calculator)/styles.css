@@ -1,0 +1,59 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+.calcContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calcFrame{
+    width: 400px;
+    height: 600px;
+    background-color: #292929;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px grey;
+    display:grid;
+}
+
+.conteinerWindow{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.windowForInput{
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    margin-top: 48px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.windowForInput p{
+    width: 250px;
+    height: 22px;
+}
+
+.containerBtn{
+    height: 335px;
+    display: grid;
+    grid-template-columns: repeat(4, 52px);
+    grid-gap: 19px;
+    justify-content: center;
+}
+.containerBtn button{
+    height: 33px;
+    width: 52px;
+}
+.containerBtn :last-child{
+    width: 123px;
+    margin: 0px 72px;
+}

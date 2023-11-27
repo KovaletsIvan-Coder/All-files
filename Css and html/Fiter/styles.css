@@ -1,0 +1,34 @@
+div{
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kT6v145H1R5KkLUExn9nndEzgjNP_knYug&usqp=CAU');
+    transition: all ease 1s;
+}
+
+#d1:hover{
+      filter: blur(10px);  /*розмиває картинку     */
+}
+
+#d2:hover{
+     filter: drop-shadow(5px 5px 5px grey) /* при наведенні з'являється тінь*/
+}
+
+#d3:hover{
+    filter: grayscale(100%)  /* робить картинку менш кольоровою (сірою)*/
+}
+
+#d4:hover{
+    filter: brightness(150%); /* змінює яскравість початкове начення 100%*/
+}
+
+#d5:hover{
+    filter: contrast(140%)
+}
+#d6:hover{ 
+    filter: saturate(140%)   /* змінює насиченість початкове начення 100%*/
+}  
+
+#d7:hover{
+    filter: opacity(80%)   /* прозорість */
+}

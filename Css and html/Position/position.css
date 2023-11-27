@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(56, 8, 101);
+    margin-top: 0px;
+    height: 4500px;
+
+}
+
+.parent{
+    background-color:rgb(82, 10, 150);
+    padding: 10px 0;
+    margin-top: 50px;
+    font-size: 36px;
+    color: aliceblue;
+    height: 4000px;
+}
+.child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 400px;
+    font-size: 36px;
+    color: aliceblue;
+
+}
+
+.child1{
+    background-color: blueviolet;
+    /*position: absolute; при цій властивості елемент випадає з загального потоку і наступний елемент стає на його місце
+    
+    ми також можемо пересувати елементи але властивості вже будуть застосовуватись відповідно до екрану а не батьківського блоку
+
+    також при цій властивості ми отримуємо можливість задавати лінійним елементам ширину і висоту
+
+
+   z-index: 1;-визначає порядковість показу елемента на html сторінці */
+   
+    /* position: relative;тепер ми можемо застосовувати властивості top right bottom left
+      але вони будуть зястосовуватись відповідно до батьківського блоку
+    top: 40px;
+    left: 50px;*/
+}
+.child2{
+    background-color: rgb(198, 43, 226);
+    /*position: fixed; /*при цій властивості елемент немов зафіксований на екрані і при скролі залишається на тому самому місці
+    right: 0;*/
+
+   /* position: relative;
+    z-index: 2;/*визначає порядковість показу елемента на html сторінці.В даному випадку child 2 буде мати приорітет оскільки z index має більше число */
+}
+.child3{
+    background-color: rgb(233, 5, 210);
+    /*position: sticky; ця властивість приклеює елемент до екрану тоді коли ми доскролюємо до певного моменту який ми вказуємо нище
+    top: 10px;*/
+}

@@ -1,0 +1,22 @@
+.test{
+    width: 10%;
+    height: 100px;
+    background-color: chartreuse;
+}
+.test1{
+    width: 50vw;
+    height: 50vw;
+    background-color: rgb(230, 227, 15);
+}
+html{
+    font-size: 16px;;
+}
+.test2{
+    font-size: 2em;
+}
+.test3{
+    font-size: 1ems;
+}
+.test4{
+    font-size: 1rem;
+}

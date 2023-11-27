@@ -1,0 +1,8 @@
+.inputcreate{
+    width: 750px;
+    height: 25px;
+    border-color: rgb(255, 200, 47);
+    padding: 0 10px;
+    border-radius: 2px;
+    margin: 5px auto;
+}

@@ -1,0 +1,15 @@
+.brands_nav_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    height: 41px;
+    padding: 0 80px;
+}
+.brands_link{
+    color: white;
+    text-decoration: none;
+}
+.brands_link:hover{
+    color: rgba(255, 255, 255, 0.69);
+}

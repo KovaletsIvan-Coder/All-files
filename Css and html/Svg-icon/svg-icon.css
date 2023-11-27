@@ -1,0 +1,14 @@
+.s{
+    /* background-color: black; */
+}
+
+.s a{
+    color: black
+}
+.s a svg{
+    color: black
+}
+
+.svg .svg-avatar{
+ background-color: blue;
+}

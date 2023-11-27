@@ -1,0 +1,50 @@
+.test-transform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:150px;
+    height:150px;
+    margin-top: 50px;
+    margin-left:50px;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: all 1s ease;
+}
+
+.test-rotate{
+    background-color: rgb(255, 0, 0);
+}
+.test-rotate:hover{
+   transform: rotate(360deg);
+   background-color: rgb(255, 115, 0);
+
+   /*transform-origin: bottom right; можна обирати де знаходитиметься вісь обертання*/ 
+    /*transform: rotate(360deg)  translate(100px)   
+   можна об'єднювати властивості трансформера*/
+}
+.test-scale{
+    background-color: rgb(255, 115, 0);
+}
+.test-scale:hover{
+transform: scale(2);
+background-color: rgb(255, 204, 0);
+
+}
+.test-translate{
+    background-color: rgb(255, 204, 0);
+    
+}
+.test-translate:hover{
+   /* transform: translate(100%); відсувається на 100%*/ 
+   /* transform: translate(0px, 100px)  /*(X,Y)*/
+   transform: translate(100px ,0px);
+   background-color: rgb(156, 234, 12);
+
+}
+.test-skew{
+    background-color: rgb(156, 234, 12);
+}
+.test-skew:hover{
+transform: skew(180deg);
+ 
+
+}

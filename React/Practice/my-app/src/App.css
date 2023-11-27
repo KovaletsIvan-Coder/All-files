@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#root{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.like-container{
+    text-align:center;
+}
+.button-container{
+    display:flex;
+    justify-content: center;
+}
+.likeBtn{
+    background-color: rgb(255, 200, 47);
+    width: 32px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+}
+.likeBtn:hover{
+    background-color:rgb(255, 200, 47);
+}
+.likeBtn:active{
+    background-color: rgb(255, 200, 47);
+}
+.MyInput{
+    margin: 20px 0;
+}
+.posts-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 15px auto;
+    border: 2px solid rgb(255, 200, 47);
+    max-width: 750px;
+    border-radius: 2px;
+}
+
+.post-enter {
+    transform:translateX(-350px);
+    opacity: 0;
+  }
+.post-enter-active {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 500ms ease-in;
+  }
+.post-exit {
+    opacity: 1;
+  }
+.post-exit-active {
+    opacity: 0;
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+  }
+
+
+.page_container{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+  }
+.page{
+    border: rgb(100, 100, 100) solid 1px;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin: 0px 0.5px;
+    cursor: pointer;
+  }
+.page_curent{
+    border: rgb(255, 200, 47) solid 1px;
+  }
+  .nav_bar{
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+  }
+  .nav_bar_links{
+    margin-left: auto;
+  }
+  .link{
+    padding: 0 20px;
+  }
+  
+
+

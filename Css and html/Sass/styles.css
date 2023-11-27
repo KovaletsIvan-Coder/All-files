@@ -1,0 +1,75 @@
+.test {
+  color: rgb(23, 47, 3);
+  font-size: 40px;
+}
+.test:hover {
+  color: #2e5f06;
+  transition: 1s;
+}
+.test > p {
+  color: rgb(12, 187, 64);
+}
+.test > p:first-of-type {
+  color: red;
+}
+
+.test1 {
+  color: rgb(23, 47, 3);
+  font-size: 40px;
+}
+.test1:hover {
+  color: rgb(227, 0, 155);
+}
+
+.test2 {
+  color: rgb(23, 47, 3);
+}
+
+.test3 {
+  color: rgb(23, 47, 3);
+}
+
+.test4 {
+  color: rgb(23, 47, 3);
+}
+
+.test5 {
+  color: rgb(23, 47, 3);
+}
+
+.test6 {
+  color: rgb(23, 47, 3);
+}
+
+.test7 {
+  color: rgb(23, 47, 3);
+}
+
+.test8 {
+  color: rgb(23, 47, 3);
+}
+
+.test9 {
+  color: rgb(23, 47, 3);
+}
+
+.btn1 {
+  border: 2px solid rgb(44, 12, 73);
+  font-size: 18px;
+  background-color: rgb(131, 21, 120);
+  color: rgb(44, 12, 73);
+}
+
+.btn2 {
+  border: 2px solid rgb(78, 24, 128);
+  font-size: 18px;
+  background-color: rgb(208, 28, 190);
+  color: rgb(78, 24, 128);
+}
+
+.btn3 {
+  border: 2px solid rgb(114, 39, 184);
+  font-size: 18px;
+  background-color: rgb(251, 38, 230);
+  color: rgb(114, 39, 184);
+}/*# sourceMappingURL=styles.css.map */

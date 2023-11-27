@@ -1,0 +1,5 @@
+{
+    "git.enabled": false,
+    "git.followTagsWhenSync": true,
+    "git.enableCommitSigning": false
+}

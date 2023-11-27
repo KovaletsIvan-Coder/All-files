@@ -1,0 +1,53 @@
+body{
+    height: 6000px;
+}
+.parent{
+    height: 400px;
+    background-color:aqua;
+    text-align: center;
+   position:relative;  /*P A  для того щоб елемент росташовувався стосовно батьківського блоку*/
+}
+h2{
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    margin:0;       
+
+    /*line-height: 400px;    L h*/
+}
+.parent2{
+    margin-top:20px;
+    height: 400px;
+    background-color:aqua;
+
+    display: flex;
+
+    /*display:flex;
+    justify-content: center;
+    align-items: center;      D F  */
+   
+    /*display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    align-items: center;    D G*/
+}
+img{
+    /*width: 100%;    D G*/
+    width: 400px; 
+    margin:auto;  /*крутий спосіб який працює тільки якщо у батьківському блоці прописано display:flex */
+}
+
+/*   вертикальне центрування елементів: 
+
+display: flex найкращий варіант
+
+display:grid  зручно але підтримується не на усіх платформах
+
+position:absolute норм але вимагає трохи багато команд 
+
+table поганий метод
+
+
+одного рядка тексту:
+line-height

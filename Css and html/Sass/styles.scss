@@ -1,0 +1,68 @@
+$main-color: rgb(23, 47, 3);
+$size-x: 40px;
+
+.test{
+color: $main-color;
+font-size: $size-x;
+ &:hover {
+    color: lighten($main-color, $amount: 10/*відсоток на який ми затемнюємо колір*/);
+    transition: 1s;
+ }
+ & > p {
+        color:rgb(12, 187, 64);
+        &:first-of-type{
+            color: red;
+
+        }
+    }
+}
+.test1{
+color:$main-color;
+font-size: $size-x;
+&:hover{
+    color:rgb(227, 0, 155)
+}
+}
+.test2{
+ color: $main-color;   
+}
+.test3{
+color: $main-color;
+}
+.test4{
+ color: $main-color   
+}
+.test5{
+    color: $main-color    
+}
+.test6{
+    color: $main-color     
+}
+.test7{
+    color: $main-color    
+}
+.test8{
+    color: $main-color    
+}
+.test9{
+    color: $main-color    
+}
+
+
+
+@mixin btn($border-color,$background-color,$font-color){
+    border: 2px solid $border-color;
+    font-size: 18px;
+    background-color: $background-color;
+    color: $font-color ;
+}
+.btn1{
+ @include btn(rgb(44, 12, 73),rgb(131, 21, 120),rgb(44, 12, 73))  /*так можна робити з не тільки з кольорами*/
+}
+.btn2{
+    @include btn(rgb(78, 24, 128),rgb(208, 28, 190),rgb(78, 24, 128))
+}
+.btn3{
+    @include btn(rgb(114, 39, 184),rgb(251, 38, 230),rgb(114, 39, 184))
+}
+
