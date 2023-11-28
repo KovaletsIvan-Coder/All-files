@@ -12,6 +12,7 @@ import Dartmoor from '../../pages/BrandsPage/Dartmoor';
 import YT from '../../pages/BrandsPage/YT';
 import Bergamount from '../../pages/BrandsPage/Bergamount';
 import Bascet from '../Basket/Basket';
+import PostIdPage from '../../pages/NavigationPages/PostIdPage';
 
 const AppRouter = () => {
   return (
@@ -29,6 +30,9 @@ const AppRouter = () => {
       <Route path='/Dartmoor' element={<Dartmoor/>}></Route>
       <Route path='/YT' element={<YT/>}></Route>
       <Route path='/Bergamount' element={<Bergamount/>}></Route>
+
+
+      <Route path='/posts/:id' element={<PostIdPage/>}></Route>
 
       <Route path='*' element={<MainPage/>}></Route>
     </Routes>
