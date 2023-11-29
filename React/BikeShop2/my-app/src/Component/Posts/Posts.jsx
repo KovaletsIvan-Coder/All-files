@@ -7,7 +7,8 @@ const Posts = (props) => {
     const router = useNavigate()
     
 
-    const addNumber2 = ()=>{
+    const addNumber2 = (e)=>{
+        e.stopPropagation()
         setNumber(number)
         const NewNumber = number; 
         props.add(NewNumber);
@@ -26,7 +27,7 @@ const Posts = (props) => {
                 <div>{props.post.name}</div>
                 <div>Price: {props.post.price}$</div>
 
-                <select className={cl.selector} >
+                <select onClick={(e)=> e.stopPropagation()} className={cl.selector} >
                     <option disabled >Wheels:</option>
                     <option>26</option>
                     <option>27,5</option>
