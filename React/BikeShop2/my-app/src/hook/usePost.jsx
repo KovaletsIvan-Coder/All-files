@@ -1,23 +1,26 @@
-import {useMemo} from 'react';
-export const useSortedPosts = (posts, sort)=>{
-    const SortedPosts = useMemo(()=>{
-        console.log("func work ");
-        if(sort){
-          return (sort === "priceHigher") ? [...posts].sort((a,b) => b.price - a.price) : [...posts].sort((a,b) => a.price - b.price)
-        }
-        return posts
-        
-      },[sort,posts])
+import { useMemo } from "react";
+export const useSortedPosts = (posts, sort) => {
+  const SortedPosts = useMemo(() => {
+    // console.log("function work ");
+    if (sort) {
+      return sort === "priceHigher"
+        ? [...posts].sort((a, b) => b.price - a.price)
+        : [...posts].sort((a, b) => a.price - b.price);
+    }
+    return posts;
+  }, [sort, posts]);
 
-      return SortedPosts
-}
+  return SortedPosts;
+};
 
-export const usePost = (posts,sort,search)=>{
-    const SortedPosts = useSortedPosts(posts,sort)
+export const usePost = (posts, sort, search) => {
+  const SortedPosts = useSortedPosts(posts, sort);
 
-    const serchedAndSortedPosts = useMemo(()=>{
-        return SortedPosts.filter(post=> post.name.toLowerCase().includes(search.toLowerCase()))
-      },[SortedPosts,search])
+  const serchedAndSortedPosts = useMemo(() => {
+    return SortedPosts.filter((post) =>
+      post.name.toLowerCase().includes(search.toLowerCase())
+    );
+  }, [SortedPosts, search]);
 
-      return serchedAndSortedPosts
-}
+  return serchedAndSortedPosts;
+};

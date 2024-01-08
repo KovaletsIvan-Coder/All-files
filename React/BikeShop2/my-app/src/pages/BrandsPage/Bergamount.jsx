@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Bergamount = () => {
-  return (
-    <h1 style={{textAlign:"center"}}>
-      Bergamount Page
-    </h1>
-  )
-}
+  return <h1 style={{ textAlign: "center" }}>Bergamount Bike Page</h1>;
+};
 
-export default Bergamount
+export default Bergamount;

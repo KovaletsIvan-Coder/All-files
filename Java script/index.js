@@ -1,33 +1,33 @@
-const array =[
-    {name: 'bob', age: 20},
-    {name: 'julia', age: 30},
-    {name: 'daniel', age: 18},
-    {name: 'robert', age: 45},
-    {name: 'mike', age: 35},
-    {name: 'monica', age: 24},
-    {name: 'sara', age: 60},
-]
+let startValue = 0;
+const renderInput = () => {
+  getResult();
+  const inp = document.querySelector(".inp");
+  const plus = document.querySelector(".plus");
+  const minus = document.querySelector(".minus");
+  inp.value = startValue;
+  plus.addEventListener("click", () => {
+    inp.value++;
+    saveResult();
+  });
+  minus.addEventListener("click", () => {
+    inp.value--;
+    saveResult();
+  });
+};
+const saveResult = () => {
+  const inp = document.querySelector(".inp");
+  localStorage.setItem("input", inp.value);
+};
 
-// function compliment (arr){
-//     for (const key in arr) {
-//         if(arr.age[key] > 30){
-//             arr.name[key] = arr.name[key] +'old'
+const getResult = () => {
+  const inp = document.querySelector(".inp");
 
-//         }
-//     }
-//     return arr
-// }
-// compliment(array)
+  let localSt = localStorage.getItem("input");
+  startValue = localSt;
 
-function compliment (arr){
-    for(let i = 0; i < arr.length; i++){
-        const element = arr[i]
-        element.age >= 30 
-        ? element.name = 'old ' + element.name 
-        : element.name = 'young ' + element.name
-    }
-    return arr
+  console.log(localStorage.getItem("input"));
+};
+renderInput();
 
-}
-console.log(compliment(array)
-);
+const cookie1 = document.cookie;
+console.log(cookie1);

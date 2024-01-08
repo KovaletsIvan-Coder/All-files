@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Specialized = () => {
-  return (
-    <h1 style={{textAlign:"center"}}>
-      Specialized Page
-    </h1>
-  )
-}
+  return <h1 style={{ textAlign: "center" }}>Specialized Bike Page</h1>;
+};
 
-export default Specialized
+export default Specialized;
