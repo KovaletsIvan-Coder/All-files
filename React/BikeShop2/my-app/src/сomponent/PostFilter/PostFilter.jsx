@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "../Input/Input";
 import Selector from "../Selector/Selector";
-
+import "./PostFilter.css";
 const PostFilter = ({ filter, setFilter }) => {
   return (
     <div className="select_container">

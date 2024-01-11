@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Posts.css";
 import { BasketContext, ulBasketContext } from "../../context";
@@ -9,6 +9,9 @@ const Posts = (props) => {
   const [identifier, setIdentifier] = useState(1);
   const [wheelsSelect, setWheelsSelect] = useState("26");
   const [frameSizeSelect, setFrameSizeSelect] = useState("S");
+  useEffect(() => {
+    localStorage.setItem("elementsInBasket", JSON.stringify(elementsInBasket));
+  }, [elementsInBasket]);
 
   const updateBasketQuantity = (e) => {
     e.stopPropagation();
@@ -26,7 +29,6 @@ const Posts = (props) => {
       frameSize: frameSizeSelect,
     };
     setElementsInBasket((prevElements) => [...prevElements, newElement]);
-    console.log(elementsInBasket);
   };
   const router = useNavigate();
   const routeToIdPage = () => {
@@ -45,7 +47,7 @@ const Posts = (props) => {
 
         <div className="bike_information">
           <div>{props.post.name}</div>
-          <div>Price: {props.post.price}$</div>
+          <div className="price">Price: {props.post.price}$</div>
 
           <form className="size_form">
             <p>Wheels: </p>
@@ -74,7 +76,7 @@ const Posts = (props) => {
           </form>
 
           <button onClick={updateBasketQuantity} className="buy_button">
-            Add To Basket
+            Add To Cart
           </button>
         </div>
       </div>

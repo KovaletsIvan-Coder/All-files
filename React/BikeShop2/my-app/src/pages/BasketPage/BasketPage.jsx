@@ -19,7 +19,8 @@ const BasketPage = () => {
   useEffect(() => {
     localStorage.setItem("elementsInBasket", JSON.stringify(newArray));
   }, [newArray]);
-  //видалення елемента
+
+  // видалення елемента
   const removeElement = (curElem) => {
     setNewArray(
       newArray.filter(
@@ -33,7 +34,7 @@ const BasketPage = () => {
     }
     setItemInBasket((itemInBasket -= 1));
     localStorage.setItem("itemInBasket", itemInBasket);
-    localStorage.setItem("elementsInBasket", JSON.stringify(newArray));
+    // localStorage.setItem("elementsInBasket", JSON.stringify(newArray));
   };
 
   //визначення загальної суми
@@ -42,7 +43,7 @@ const BasketPage = () => {
   }, 0);
   //повідомлення про пустий кошик
   if (newArray.length === 0) {
-    return <h1 className="empty_basket">Basket is empty</h1>;
+    return <h1 className="empty_basket">Cart is empty</h1>;
   }
   console.log(newArray);
 
@@ -53,7 +54,6 @@ const BasketPage = () => {
         <div className="label">Price</div>
         <div className="label">Quantity</div>
       </div>
-      {/* {newArray.length  < 1 ?<h1>basket is empty</h1>} */}
 
       <ul>
         {newArray.map((item, index) => (

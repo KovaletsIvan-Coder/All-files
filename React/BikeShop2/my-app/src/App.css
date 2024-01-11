@@ -8,28 +8,6 @@ body {
   height: 1700px;
 }
 
-.select_container {
-  display: flex;
-  justify-content: flex-end;
-  margin: 5px 148px 0px 0;
-}
-.bike_icons_container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(3, 500px);
-  justify-items: center;
-  align-items: center;
-  margin: 0 60px;
-}
-.bike_not_found {
-  color: black;
-  text-align: center;
-  margin: 50px;
-}
-.select {
-  cursor: pointer;
-}
-
 .img {
   width: 400px;
 }

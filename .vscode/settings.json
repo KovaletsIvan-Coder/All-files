@@ -1,7 +1,7 @@
 {
-    "git.enabled": false,
-    "git.followTagsWhenSync": true,
-    "git.enableCommitSigning": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+  "git.enabled": true,
+  "git.followTagsWhenSync": true,
+  "git.enableCommitSigning": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }

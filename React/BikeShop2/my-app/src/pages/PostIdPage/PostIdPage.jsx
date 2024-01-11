@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./PostIdPage.css";
 import { BasketContext, ulBasketContext } from "../../context";
 
@@ -10,6 +10,10 @@ const PostIdPage = () => {
   const [identifier, setIdentifier] = useState(100);
   //100 для того щоб значення ідентифікатора на сторінці конкретного велосипеда відрізнялось від значення ідентифікатора на загальній сторінці байків
   //інакше це призведе до багу при видаленні елемента з кошика
+
+  useEffect(() => {
+    localStorage.setItem("elementsInBasket", JSON.stringify(elementsInBasket));
+  }, [elementsInBasket]);
 
   const idBike = {
     name: localStorage.getItem("nameBike"),
@@ -70,7 +74,7 @@ const PostIdPage = () => {
 
         <h4>Price: {idBike.price}$</h4>
         <button className="buy_button" onClick={updateBasketQuantity2}>
-          Add To Basket
+          Add To Cart
         </button>
       </div>
     </div>

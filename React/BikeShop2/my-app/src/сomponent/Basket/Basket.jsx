@@ -8,11 +8,10 @@ const Basket = () => {
   return (
     <div className="main_basket_container">
       <div className="basket_container">
-        <Link to="/basket">
+        <Link className="link_basket" to="/basket">
           <div className="number_in_basket">{itemInBasket}</div>
           <svg
-            width="40px"
-            height="40px"
+            className="basket_swg"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,6 @@
 import React from "react";
 import Posts from "../Posts/Posts";
+import "./PostList.css";
 
 const PostList = ({ posts, itemInBasket, add }) => {
   if (posts.length === 0) {
